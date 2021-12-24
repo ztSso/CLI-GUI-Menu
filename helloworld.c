@@ -16,5 +16,8 @@ int main()
     printf("%d\n",sizeof(float));
     printf("%d\n",sizeof(double));
     printf("%d\n",sizeof(long double));
+    /*单精度浮点型：float--4个字节 双精度浮点形double--8个字节
+    float一般在计算机中存储占用4个字节，32为，有效位数为7位；
+    double 在计算机中存储占用8字节，64位，有效位数为16位。*/
     return 0;
 }
