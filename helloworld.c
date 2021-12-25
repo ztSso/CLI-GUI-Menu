@@ -1,8 +1,11 @@
 #include <stdio.h>
-int a=100;//全局变量：定义在大括号外。
 int main()
 {
-    int b=10;//局部变量：定义在大括号的内部。
-    printf("%d\n",a);//局部变量与全局变量命名起冲突时，局部变量优先。
-    return 0;
+int num1=0;
+int num2=0;
+int sum=0;//存放加法的结果。
+scanf("%d%d",&num1,&num2);//(输入)
+sum=num1+num2;//(相加)
+printf("%d\n",sum);//输出
+return 0;
 }
