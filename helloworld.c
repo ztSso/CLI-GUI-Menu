@@ -1,11 +1,14 @@
 #include <stdio.h>
+//变量作用域和生命周期
+int b=10;//全局变量的作用域为整个工程
+//全局变量生命周期为整个程序的生命周期
 int main()
 {
-int num1=0;
-int num2=0;
-int sum=0;//存放加法的结果。
-scanf("%d%d",&num1,&num2);//(输入)
-sum=num1+num2;//(相加)
-printf("%d\n",sum);//输出
-return 0;
+    {
+        int a = 10;//局部变量作用域为变量所在的局部范围
+        //局部变量生命周期为进入作用域到出作用域
+        printf("%d\n",a);
+    }
+    printf("%d\n",b);
+    return 0;
 }
