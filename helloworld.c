@@ -1,14 +1,10 @@
 #include <stdio.h>
-//变量作用域和生命周期
-int b=10;//全局变量的作用域为整个工程
-//全局变量生命周期为整个程序的生命周期
+#include <stdlib.h>
 int main()
 {
-    {
-        int a = 10;//局部变量作用域为变量所在的局部范围
-        //局部变量生命周期为进入作用域到出作用域
-        printf("%d\n",a);
-    }
-    printf("%d\n",b);
+    int n;
+    scanf("%d",&n);//输入函数
+    printf("%#o %#d %#x\n",n,n,n);//输出值
+    system("pause");
     return 0;
 }
