@@ -1,10 +1,33 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include<stdio.h>
+#include<stdlib.h>
 int main()
 {
-    int n;
-    scanf("%d",&n);//è¾“å…¥å‡½æ•°
-    printf("%#o %#d %#x\n",n,n,n);//è¾“å‡ºå€¼
+    char ch ='A';
+    char str[20]="www.runoob.com";
+    float flt=10.234;
+    int no=150;
+    double dbl=20.123456;
+    /*ÔÚprintfº¯ÊıÖĞ£º
+    %dÎªÊ®½øÖÆÓĞ·ûºÅÕûÊı
+    %nÎªÊ®½øÖÆÎŞ·ûºÅÕûÊı
+    %fÎª¸¡µãÊı
+    %s ×Ö·û´®
+    %p Ö¸ÕëµÄÖµ
+    %e Ö¸ÊıĞÎÊ½µÄ¸¡µãÊı
+    %x,%X ÎŞ·ûºÅÒÔÊ®Áù½øÖÆ±íÊ¾µÄÕûÊı
+    %o ÎŞ·ûºÅÒÔ°Ë½øÖÆ±íÊ¾µÄÕûÊı
+    %g °ÑÊä³öµÄÖµ°´ÕÕ%e »òÕß%f ÀàĞÍÖĞÊä³ö³¤¶È½ÏĞ¡µÄ·½Ê½Êä³ö
+    %p Êä³öµØÖ··û
+    %lu 32Î»ÎŞ·ûºÅÕûÊı
+    %llu 64Î»ÎŞ·ûºÅÕûÊı
+    */
+    printf("×Ö·ûÎª%c\n",ch);
+    printf("×Ö·û´®Îª%s\n",str);
+    printf("¸¡µãÊıÎª%f\n",flt);
+    printf("ÕûÊıÎª%d\n",no);
+    printf("Ë«¾«¶ÈÖµÎª%lf\n",dbl);
+    printf("°Ë½øÖÆÖµÎª%o\n",no);
+    printf("Ê®Áù½øÖÆÖµÎª%x\n",no);
     system("pause");
     return 0;
 }
