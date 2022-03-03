@@ -3,11 +3,12 @@
 
 int main()
 {
-    char arr1[]="abc";//数组 字符串包含0 --- 'a' 'b' 'c' '\0'
-    char arr2[]={'a','b','c',0};//'\0'=0 指字符串的结束标志
-    //'a'-97 数据在计算机上存储时，存储于的是二进制 ASCII编码
-    printf("%s\n",arr1);
-    printf("%s\n",arr2);
+    int a,b,c;//int定义变量a,b,c
+    scanf("%d%d",&a,&b);//输入a,b
+    c=a;//使变量c=变量a
+    a=b;
+    b=c;
+    printf("a=%d,b=%d\n",a,b);//输出a,b
     system("pause");
     return 0;
     }
