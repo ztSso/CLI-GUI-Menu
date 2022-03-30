@@ -1,26 +1,20 @@
 #include<stdio.h>
 #include<stdlib.h>
-
+//while 语句使用
+//while(表达式) 语句 /*循环体*/
+//先计算表达式 当表达式=1；执行循环体；然后判断表达式的值，1=循环；否则循环结束，执行while下一条语句
 int main()
 {
-    int x;
-    scanf("%d",&x);
-    if(x%3==0&&x%5==0&&x%7==0)
-       printf("%d可以被3、5、7整除\n",x);
-    else if(x%3==0&&x%5==0)
-       printf("%d可以被3、5整除\n",x);
-    else if(x%3==0&&x%7==0)
-       printf("%d可以被3、7整除\n",x);
-    else if(x%7==0&&x%5==0)
-       printf("%d可以被5、7整除\n",x);
-    else if(x%3==0)
-       printf("%d可以被3整除\n",x);
-    else if(x%5==0)
-       printf("%d可以被5整除\n",x);
-    else if(x%7==0)
-       printf("%d可以被7整除\n",x);
-    else 
-       printf("%d不可以被3、5、7任何一个数整除\n",x);
-    system("pause");
-    return 0;
+   int i,n,S;//定义变量i，n，S
+   scanf("%d",&n);//输入变量n的值
+   i=1;//赋值i
+   S=0;
+   while (i<=n)//开始循环，当i<=n为0时，循环结束。
+   {
+      S+=i;
+      i++;//在循环体中应该有使i增值并最终大于n的语句，
+   }
+   printf("S=%d\n",S);
+   system("pause");
+   return 0;
 }
