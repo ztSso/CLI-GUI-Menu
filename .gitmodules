@@ -1,0 +1,3 @@
+[submodule "CLI_GUI_Rendering"]
+	path = CLI_GUI_Rendering
+	url = git@github.com:MemoryShadow/CLI_GUI_Rendering.git
